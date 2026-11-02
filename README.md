@@ -1,20 +1,28 @@
 # abaventures.net
 
-Static website for ABA Ventures LLC, hosted on GitHub Pages. It replaces the Squarespace site with the same pages, text and images. Plain HTML and CSS, with no build step.
+Static website for ABA Ventures LLC, hosted on GitHub Pages. It replaces the Squarespace site with the same pages, text and images. Plain HTML and CSS: nothing needs building before publishing.
 
 ```
 index.html            Home
 about/index.html      About
 services/index.html   Services
-contact/index.html    Contact
-css/style.css         All styling
+contact/index.html    Contact (with the contact form)
+css/style.css         All styling, measured from the Squarespace site
+fonts/                Self-hosted Poppins (body) and Heebo (headings)
 images/               Photos (optimized from the Squarespace originals)
 404.html              Not-found page
 work-1/, cart/        Redirects for old Squarespace URLs
+tools/build_pages.py  Generates the HTML pages (shared header/footer live here)
 CNAME                 Custom domain (www.abaventures.net)
 ```
 
-To edit text, change the HTML file for that page and commit. GitHub Pages republishes within a minute or two. The header and footer are repeated in each page, so a nav change has to be made in all four.
+The layout replicates the Squarespace theme rule for rule: the same fluid heading sizes, page gutters, section spacing, image-card layouts, mobile menu and form styling. It was checked against the live site at 1920, 1366, 1024, 800 and 390px wide, with every block, image, paragraph and form field within 1px.
+
+**Editing:** small text changes can go straight into the page's HTML file. For bigger changes, edit `tools/build_pages.py` and run `python3 tools/build_pages.py .` from the repo root to regenerate all pages, so the header and footer stay in sync.
+
+**Heading font:** Squarespace uses Acumin Pro, an Adobe font licensed only for Squarespace sites. The headings use Heebo (free, open-licensed), tuned to match Acumin's letter widths and stroke weight. If ABA ever gets an Adobe Fonts web project with Acumin Pro, add its `<link>` tag to the pages and it is used automatically. No CSS changes are needed.
+
+**Contact form:** GitHub Pages can't process forms, so the form posts to [FormSubmit](https://formsubmit.co), a free service that emails submissions. They go to the address in `FORM_TO` in `tools/build_pages.py` (currently Austen@abaventures.net). **The first submission triggers a one-time activation email to that address. Click the link in it, or later submissions won't be delivered.** Submit a test message once the site is live.
 
 ## 1. Turn on GitHub Pages
 

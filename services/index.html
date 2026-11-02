@@ -3,131 +3,90 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Services — ABA Ventures</title>
+  <title>Services &mdash; ABA Ventures</title>
   <meta name="description" content="ABA Ventures services: project and construction management, cell site decommissioning, cable mining, battery recycling, site restoral, and closeout reporting.">
   <link rel="canonical" href="https://www.abaventures.net/services/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="ABA Ventures">
-  <meta property="og:title" content="Services — ABA Ventures">
+  <meta property="og:title" content="Services &mdash; ABA Ventures">
   <meta property="og:description" content="ABA Ventures services: project and construction management, cell site decommissioning, cable mining, battery recycling, site restoral, and closeout reporting.">
   <meta property="og:url" content="https://www.abaventures.net/services/">
   <meta property="og:image" content="https://www.abaventures.net/images/hero-tower.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+  <link rel="preload" href="../fonts/poppins-300-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../fonts/heebo-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-  <a class="skip" href="#main">Skip to content</a>
-  <header class="site-header">
-    <div class="wrap">
-      <a class="brand" href="../">ABA Ventures</a>
-      <nav class="site-nav" aria-label="Main">
-        <ul>
-        <li><a href="../">Home</a></li>
-        <li><a href="../about/">About</a></li>
-        <li><a href="../services/" aria-current="page">Services</a></li>
-        <li><a href="../contact/">Contact</a></li>
-        </ul>
-      </nav>
+  <a class="skip" href="#main">Skip to Content</a>
+  <header class="header">
+    <div class="header-inner">
+      <p class="site-title"><a href="../">ABA Ventures</a></p>
+      <nav class="nav" aria-label="Main"><a href="../">Home</a><a href="../about/">About</a><a href="../services/" aria-current="page">Services</a><a href="../contact/">Contact</a></nav>
+      <button class="burger" type="button" aria-label="Open Menu" aria-expanded="false" aria-controls="mobile-menu"><span class="burger-box"><span></span><span></span></span></button>
     </div>
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile"><ul><li><a href="../">Home</a></li><li><a href="../about/">About</a></li><li><a href="../services/">Services</a></li><li><a href="../contact/">Contact</a></li></ul></nav>
   </header>
 
   <main id="main">
-    <div class="wrap">
-      <h2 class="page-title">Our services</h2>
-
-      <div class="row">
-        <div class="media">
-          <img src="../images/services-management.jpg" alt="Project planning with laptops and paperwork" width="1400" height="934" loading="lazy">
-        </div>
-        <div class="text">
-          <h3>Management Services</h3>
-          <p>We provide quality management solutions for clients, utilizing technology to seamlessly execute projects and coordinate with team members.</p>
-          <p>Services include:</p>
-          <ul class="bullets">
-            <li>Project management</li>
-            <li>Crew oversight</li>
-            <li>Construction management</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="row flip">
-        <div class="media">
-          <img src="../images/services-decommissioning.jpg" alt="Excavator beside a lattice tower at a cell site at sunset" width="1400" height="808" loading="lazy">
-        </div>
-        <div class="text">
-          <h3>Decommissioning Services</h3>
-          <p>ABA specializes in cell site decommissioning, providing high efficiency site removal execution and project logistics.</p>
-          <p>Services include:</p>
-          <ul class="bullets">
-            <li>In-Shelter Equipment Removals</li>
-            <li>BTS &amp; Power Cabinet</li>
-            <li>Deinstallation</li>
-            <li>Cable Mining</li>
-            <li>Battery Management &amp; Recycling</li>
-            <li>Tower Decommissioning</li>
-            <li>Site Surveys</li>
-            <li>Hazmat Handling and Management</li>
-            <li>Concrete Demolition &amp; Removal</li>
-            <li>Complex Logistics and Materials</li>
-            <li>Transport</li>
-            <li>Site Restoral</li>
-            <li>Detailed Closeout &amp; Reporting</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="media">
-          <img src="../images/services-experience.jpg" alt="Base of a tower with cable runs inside a fenced cell site at sunset" width="1000" height="1335" loading="lazy">
-        </div>
-        <div class="text">
-          <h3>Experience with:</h3>
-          <ul class="plain">
-            <li>ACO</li>
-            <li>Additional Carrier</li>
-            <li>Battery Integration/Installation/Replacement/Testing</li>
-            <li>Cable Laying</li>
-            <li>Cable Pulling</li>
-            <li>DC Power</li>
-            <li>Decomm</li>
-            <li>Drive Testing</li>
-            <li>E-911</li>
-            <li>Electric power systems installation or service</li>
-            <li>Fiber Testing</li>
-            <li>GSM</li>
-            <li>LTE</li>
-            <li>Maintenance</li>
-            <li>Microwave</li>
-            <li>Power cable installation</li>
-            <li>Small Cell</li>
-            <li>Split Sector</li>
-            <li>Structural Mods</li>
-            <li>T-1</li>
-            <li>UMTS</li>
-            <li>Wireless</li>
-          </ul>
-        </div>
-      </div>
-    </div>
+    <section class="section medium">
+      <div class="wrap"><div class="content">
+        <div class="block text-center"><h2>Our services</h2></div>
+          <div class="block spacer" aria-hidden="true"></div>
+          <div class="block">
+            <figure class="figure split">
+              <div class="media"><img src="../images/services-management.jpg" alt="Project planning with laptops and paperwork" width="1400" height="934" loading="lazy"></div>
+              <figcaption class="card">
+                <div class="title"><h3><strong>Management Services</strong></h3></div>
+                <div class="sub"><p>We provide quality management solutions for clients, utilizing technology to seamlessly execute projects and coordinate with team members.</p><p>Services include:</p><ul class="bullets"><li><p>Project management</p></li><li><p>Crew oversight</p></li><li><p>Construction management</p></li></ul></div>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="block spacer" aria-hidden="true"></div>
+          <div class="block">
+            <figure class="figure split flip">
+              <div class="media"><img src="../images/services-decommissioning.jpg" alt="Excavator beside a lattice tower at a cell site at sunset" width="1400" height="808" loading="lazy"></div>
+              <figcaption class="card">
+                <div class="title"><h3><strong>Decommissioning Services</strong></h3></div>
+                <div class="sub"><p>ABA specializes in cell site decommissioning, providing high efficiency site removal execution and project logistics.</p><p>Services include:</p><ul class="bullets"><li><p>In-Shelter Equipment Removals</p></li><li><p>BTS &amp; Power Cabinet</p></li><li><p>Deinstallation</p></li><li><p>Cable Mining</p></li><li><p>Battery Management &amp; Recycling</p></li><li><p>Tower Decommissioning</p></li><li><p>Site Surveys</p></li><li><p>Hazmat Handling and Management</p></li><li><p>Concrete Demolition &amp; Removal</p></li><li><p>Complex Logistics and Materials</p></li><li><p>Transport</p></li><li><p>Site Restoral</p></li><li><p>Detailed Closeout &amp; Reporting</p></li></ul></div>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="block">
+            <figure class="figure split">
+              <div class="media"><img src="../images/services-experience.jpg" alt="Base of a tower with cable runs inside a fenced cell site at sunset" width="1400" height="1869" loading="lazy"></div>
+              <figcaption class="card">
+                <div class="title"><h3><strong>Experience with:</strong></h3></div>
+                <div class="sub"><p>ACO<br>Additional Carrier<br>Battery Integration/Installation/Replacement/Testing<br>Cable Laying<br>Cable Pulling<br>DC Power<br>Decomm<br>Drive Testing<br>E-911<br>Electric power systems installation or service<br>Fiber Testing<br>GSM<br>LTE<br>Maintenance<br>Microwave<br>Power cable installation<br>Small Cell<br>Split Sector<br>Structural Mods<br>T-1<br>UMTS<br>Wireless</p></div>
+              </figcaption>
+            </figure>
+          </div>
+      </div></div>
+    </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="wrap">
-      <a class="brand" href="../">ABA</a>
-      <ul>
-        <li><a href="../">Home</a></li>
-        <li><a href="../about/">About Us</a></li>
-        <li><a href="../services/">Services</a></li>
-        <li><a href="../contact/">Contact Us</a></li>
-      </ul>
-      <p class="copy">&copy; <span id="y">2026</span> ABA Ventures LLC</p>
-    </div>
+  <footer class="footer">
+    <section class="section small">
+      <div class="wrap"><div class="content medium">
+        <div class="block">
+          <h3>ABA</h3>
+          <p><a href="../">Home</a><br><a href="../about/">About Us</a><br><a href="../services/">Services</a><br><a href="../contact/">Contact Us</a></p>
+          <p><br></p>
+        </div>
+      </div></div>
+    </section>
   </footer>
-  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+
+  <script>
+    (function () {
+      var b = document.querySelector(".burger");
+      b.addEventListener("click", function () {
+        var open = document.body.classList.toggle("menu-open");
+        b.setAttribute("aria-expanded", open);
+        b.setAttribute("aria-label", open ? "Close Menu" : "Open Menu");
+      });
+    })();
+  </script>
 </body>
 </html>

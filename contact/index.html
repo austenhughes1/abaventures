@@ -3,72 +3,108 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contact — ABA Ventures</title>
+  <title>Contact &mdash; ABA Ventures</title>
   <meta name="description" content="Contact ABA Ventures to start the proposal process for telecommunication infrastructure and decommissioning projects nationwide.">
   <link rel="canonical" href="https://www.abaventures.net/contact/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="ABA Ventures">
-  <meta property="og:title" content="Contact — ABA Ventures">
+  <meta property="og:title" content="Contact &mdash; ABA Ventures">
   <meta property="og:description" content="Contact ABA Ventures to start the proposal process for telecommunication infrastructure and decommissioning projects nationwide.">
   <meta property="og:url" content="https://www.abaventures.net/contact/">
   <meta property="og:image" content="https://www.abaventures.net/images/hero-tower.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+  <link rel="preload" href="../fonts/poppins-300-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../fonts/heebo-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-  <a class="skip" href="#main">Skip to content</a>
-  <header class="site-header">
-    <div class="wrap">
-      <a class="brand" href="../">ABA Ventures</a>
-      <nav class="site-nav" aria-label="Main">
-        <ul>
-        <li><a href="../">Home</a></li>
-        <li><a href="../about/">About</a></li>
-        <li><a href="../services/">Services</a></li>
-        <li><a href="../contact/" aria-current="page">Contact</a></li>
-        </ul>
-      </nav>
+  <a class="skip" href="#main">Skip to Content</a>
+  <header class="header">
+    <div class="header-inner">
+      <p class="site-title"><a href="../">ABA Ventures</a></p>
+      <nav class="nav" aria-label="Main"><a href="../">Home</a><a href="../about/">About</a><a href="../services/">Services</a><a href="../contact/" aria-current="page">Contact</a></nav>
+      <button class="burger" type="button" aria-label="Open Menu" aria-expanded="false" aria-controls="mobile-menu"><span class="burger-box"><span></span><span></span></span></button>
     </div>
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile"><ul><li><a href="../">Home</a></li><li><a href="../about/">About</a></li><li><a href="../services/">Services</a></li><li><a href="../contact/">Contact</a></li></ul></nav>
   </header>
 
   <main id="main">
-    <div class="wrap">
-      <h2 class="page-title">Contact Us</h2>
-      <div class="contacts">
-          <div class="contact-card">
-            <p class="name">Austen</p>
-            <p><a href="mailto:Austen@abaventures.net">Austen@abaventures.net</a></p>
-            <p><a href="tel:+19196335235">(919) 633-5235</a></p>
+    <section class="section medium">
+      <div class="wrap"><div class="content">
+        <div class="row">
+          <div class="col col-5">
+            <div class="block"><h2>Contact Us</h2></div>
+            <div class="block"><hr></div>
+            <div class="block">
+              <p><a href="mailto:Austen@abaventures.net" style="text-decoration:none">Austen@abaventures.net</a><br><a href="tel:+19196335235" style="text-decoration:none">(919)-633-5235</a></p>
+              <p><a href="mailto:William@abaventures.net" style="text-decoration:none">William@abaventures.net</a><br><a href="tel:+14042165234" style="text-decoration:none">(404)216-5234</a></p>
+              <p><a href="mailto:Ashton@abaventures.net" style="text-decoration:none">Ashton@abaventures.net</a></p>
+            </div>
+            <div class="block"><hr></div>
+            <div class="block"></div>
           </div>
-          <div class="contact-card">
-            <p class="name">William</p>
-            <p><a href="mailto:William@abaventures.net">William@abaventures.net</a></p>
-            <p><a href="tel:+14042165234">(404) 216-5234</a></p>
+          <div class="col col-1"><div class="block spacer" aria-hidden="true"></div></div>
+          <div class="col col-6">
+            <div class="block" id="contact-form">
+              <form class="form" action="https://formsubmit.co/Austen@abaventures.net" method="POST">
+                <input type="hidden" name="_subject" value="New message from abaventures.net">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://www.abaventures.net/contact/?sent=1">
+                <input class="honey" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+                <fieldset>
+                  <legend>Name</legend>
+                  <div class="pair">
+                    <label class="field"><span class="caption">First Name<span class="req">(required)</span></span><input type="text" name="First Name" autocomplete="given-name" required></label>
+                    <label class="field"><span class="caption">Last Name<span class="req">(required)</span></span><input type="text" name="Last Name" autocomplete="family-name" required></label>
+                  </div>
+                </fieldset>
+                <label class="field"><span class="title">Email<span class="req">(required)</span></span><input type="email" name="email" autocomplete="email" required></label>
+                <label class="field"><span class="title">Subject<span class="req">(required)</span></span><input type="text" name="Subject" required></label>
+                <label class="field"><span class="title">Message<span class="req">(required)</span></span><textarea name="Message" required></textarea></label>
+                <fieldset>
+                  <legend>Phone</legend>
+                  <label class="field"><input type="tel" name="Phone" autocomplete="tel" aria-label="Phone"></label>
+                </fieldset>
+                <button class="button button-dark" type="submit">Submit</button>
+              </form>
+              <p class="form-sent">Thank you!</p>
+            </div>
           </div>
-          <div class="contact-card">
-            <p class="name">Ashton</p>
-            <p><a href="mailto:Ashton@abaventures.net">Ashton@abaventures.net</a></p>
-          </div>
-      </div>
-    </div>
+        </div>
+      </div></div>
+    </section>
+    <script>
+      (function () {
+        var form = document.querySelector(".form");
+        form.querySelector('[name="_next"]').value = location.origin + location.pathname + "?sent=1";
+        if (/[?&]sent=1/.test(location.search)) document.getElementById("contact-form").classList.add("sent");
+      })();
+    </script>
   </main>
 
-  <footer class="site-footer">
-    <div class="wrap">
-      <a class="brand" href="../">ABA</a>
-      <ul>
-        <li><a href="../">Home</a></li>
-        <li><a href="../about/">About Us</a></li>
-        <li><a href="../services/">Services</a></li>
-        <li><a href="../contact/">Contact Us</a></li>
-      </ul>
-      <p class="copy">&copy; <span id="y">2026</span> ABA Ventures LLC</p>
-    </div>
+  <footer class="footer">
+    <section class="section small">
+      <div class="wrap"><div class="content medium">
+        <div class="block">
+          <h3>ABA</h3>
+          <p><a href="../">Home</a><br><a href="../about/">About Us</a><br><a href="../services/">Services</a><br><a href="../contact/">Contact Us</a></p>
+          <p><br></p>
+        </div>
+      </div></div>
+    </section>
   </footer>
-  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+
+  <script>
+    (function () {
+      var b = document.querySelector(".burger");
+      b.addEventListener("click", function () {
+        var open = document.body.classList.toggle("menu-open");
+        b.setAttribute("aria-expanded", open);
+        b.setAttribute("aria-label", open ? "Close Menu" : "Open Menu");
+      });
+    })();
+  </script>
 </body>
 </html>

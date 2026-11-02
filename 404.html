@@ -3,20 +3,65 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Page not found — ABA Ventures</title>
-  <meta name="robots" content="noindex">
+  <title>Page not found &mdash; ABA Ventures</title>
+  <meta name="description" content="Page not found.">
+  <link rel="canonical" href="https://www.abaventures.net/404/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ABA Ventures">
+  <meta property="og:title" content="Page not found &mdash; ABA Ventures">
+  <meta property="og:description" content="Page not found.">
+  <meta property="og:url" content="https://www.abaventures.net/404/">
+  <meta property="og:image" content="https://www.abaventures.net/images/hero-tower.jpg">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+  <link rel="preload" href="/fonts/poppins-300-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/heebo-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/css/style.css">
+  <meta name="robots" content="noindex">
 </head>
 <body>
-  <header class="site-header"><div class="wrap"><a class="brand" href="/">ABA Ventures</a>
-    <nav class="site-nav" aria-label="Main"><ul>
-      <li><a href="/">Home</a></li><li><a href="/about/">About</a></li><li><a href="/services/">Services</a></li><li><a href="/contact/">Contact</a></li>
-    </ul></nav></div></header>
-  <main id="main"><div class="wrap section">
-    <h2>Page not found</h2>
-    <p>That page doesn&rsquo;t exist. Head back to the <a href="/">home page</a> or <a href="/contact/">contact us</a>.</p>
-  </div></main>
+  <a class="skip" href="#main">Skip to Content</a>
+  <header class="header">
+    <div class="header-inner">
+      <p class="site-title"><a href="/">ABA Ventures</a></p>
+      <nav class="nav" aria-label="Main"><a href="/">Home</a><a href="/about/">About</a><a href="/services/">Services</a><a href="/contact/">Contact</a></nav>
+      <button class="burger" type="button" aria-label="Open Menu" aria-expanded="false" aria-controls="mobile-menu"><span class="burger-box"><span></span><span></span></span></button>
+    </div>
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile"><ul><li><a href="/">Home</a></li><li><a href="/about/">About</a></li><li><a href="/services/">Services</a></li><li><a href="/contact/">Contact</a></li></ul></nav>
+  </header>
+
+  <main id="main">
+    <section class="section medium">
+      <div class="wrap"><div class="content narrow">
+        <div class="block">
+          <h2>Page not found</h2>
+          <p>That page doesn&rsquo;t exist. Head back to the <a href="/">home page</a> or <a href="/contact/">contact us</a>.</p>
+        </div>
+      </div></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <section class="section small">
+      <div class="wrap"><div class="content medium">
+        <div class="block">
+          <h3>ABA</h3>
+          <p><a href="/">Home</a><br><a href="/about/">About Us</a><br><a href="/services/">Services</a><br><a href="/contact/">Contact Us</a></p>
+          <p><br></p>
+        </div>
+      </div></div>
+    </section>
+  </footer>
+
+  <script>
+    (function () {
+      var b = document.querySelector(".burger");
+      b.addEventListener("click", function () {
+        var open = document.body.classList.toggle("menu-open");
+        b.setAttribute("aria-expanded", open);
+        b.setAttribute("aria-label", open ? "Close Menu" : "Open Menu");
+      });
+    })();
+  </script>
 </body>
 </html>
