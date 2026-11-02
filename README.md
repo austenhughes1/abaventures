@@ -13,7 +13,6 @@ images/               Photos (optimized from the Squarespace originals)
 404.html              Not-found page
 work-1/, cart/        Redirects for old Squarespace URLs
 tools/build_pages.py  Generates the HTML pages (shared header/footer live here)
-CNAME                 Custom domain (www.abaventures.net)
 ```
 
 The layout replicates the Squarespace theme rule for rule: the same fluid heading sizes, page gutters, section spacing, image-card layouts, mobile menu and form styling. It was checked against the live site at 1920, 1366, 1024, 800 and 390px wide, with every block, image, paragraph and form field within 1px.
@@ -30,7 +29,7 @@ Repo **Settings → Pages**:
 - Source: **Deploy from a branch**
 - Branch: **main**, folder **/ (root)**
 
-The site will appear at `https://austenhughes1.github.io/abaventures/` to preview. Links are relative, so the preview works before DNS changes. The `CNAME` file sets the custom domain to `www.abaventures.net`.
+The site will appear at `https://austenhughes1.github.io/abaventures/` within a minute or two. Links are relative, so the preview works before any DNS changes. Don't set a custom domain yet: once one is set, GitHub redirects the preview link to it.
 
 Recommended: verify the domain under **GitHub profile Settings → Pages → Add a domain**, which adds a TXT record. This stops anyone else from claiming the domain on GitHub.
 
@@ -55,7 +54,7 @@ The domain's DNS lives in the **Squarespace Domains** account (account.squarespa
 | @ | AAAA | 2606:50c0:8003::153 |
 | www | CNAME | austenhughes1.github.io |
 
-3. In repo **Settings → Pages**, confirm the custom domain shows `www.abaventures.net`. Once the DNS check passes, tick **Enforce HTTPS**. The certificate can take up to an hour.
+3. In repo **Settings → Pages → Custom domain**, enter `www.abaventures.net` and save. GitHub adds a `CNAME` file to the repo. Once the DNS check passes, tick **Enforce HTTPS**. The certificate can take up to an hour.
 4. Check `https://abaventures.net` and `https://www.abaventures.net` both load, then send yourself a test email to confirm mail still arrives.
 
 ## 3. Cancel the Squarespace website plan
